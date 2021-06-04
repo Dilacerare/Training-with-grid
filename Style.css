@@ -1,0 +1,442 @@
+body {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.page1 {
+  background-image: url("Images/BG.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 5% 13.1% 20% 13.1%;
+  width: 1fr;
+  height: 1fr;
+}
+
+.page1_block1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15%;
+}
+
+.logo {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 800;
+  font-size: 3.75vw;
+  color: #fff;
+  background-color: #000;
+  padding: 1% 2%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu i {
+  margin-bottom: 20%;
+}
+
+.menu a {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.85vw;
+  text-decoration: none;
+  color: #000;
+}
+
+.page1_title {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  //font-size: 72px;
+  font-size: 4.5vw;
+  white-space: nowrap;
+}
+
+.page1_text {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  //font-size: 30px;
+  font-size: 1.875vw;
+  margin-top: 2%;
+  white-space: nowrap;
+}
+
+.page2 {
+  display: grid;
+  grid-template-areas:
+    "about about block1 block1"
+    "photo1 photo2 photo3 photo4"
+    "block2 block2 photo5 nope";
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin: 0%;
+}
+.page2 img {
+  width: 100%;
+  //height: 100%;
+}
+
+.page2_block1 {
+  grid-area: block1;
+  color: #666666;
+  background-color: #f3f1ef;
+  padding-left: 6.25%;
+  padding-top: 10%;
+  height: 100%;
+}
+
+.page2_block2 {
+  grid-area: block2;
+  color: #fff;
+  background-color: #3f729b;
+  padding-left: 25%;
+  padding-top: 10%;
+}
+
+.page2_block2 a {
+  text-decoration: none;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  //font-size: 18px;
+  font-size: 1.125vw;
+  letter-spacing: 3px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 2% 3%;
+  height: 100%;
+}
+
+.link {
+  margin-top: 10%;
+}
+
+.page2_title {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  //font-size: 24px;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+}
+
+.page2_text {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  //font-size: 36px;
+  font-size: 2.25vw;
+}
+
+.about {
+  grid-area: about;
+}
+
+.photo1 {
+  grid-area: photo1;
+}
+
+.photo2 {
+  grid-area: photo2;
+}
+
+.photo3 {
+  grid-area: photo3;
+}
+
+.photo4 {
+  grid-area: photo4;
+}
+
+.photo5 {
+  grid-area: photo5;
+}
+
+.nope {
+  grid-area: nope;
+  background-color: #3f729b;
+}
+
+.page3 {
+  display: grid;
+  grid-template-areas:
+    "nope2 page3 nope3 nope3"
+    "nope2 nope4 nope3 nope3";
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin: 0;
+  background-image: url("Images/DJ.png");
+  background-size: cover;
+}
+
+.page3_block1_child {
+
+  background-color: #212227;
+  padding-left: 15%;
+  padding-top: 20%;
+  padding-bottom: 30%;
+}
+
+.page3_title {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.35vw;
+  text-transform: uppercase;
+  margin-bottom: 8%;
+  color: #2ebd59;
+}
+
+.page3_text {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.95vw;
+  color: #f9f9f9;
+  margin-bottom: 15%;
+}
+
+.page3 a {
+  text-decoration: none;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.25vw;
+  text-transform: uppercase;
+  color: #2ebd59;
+  border: 2px solid #2ebd59;
+  border-radius: 20px;
+  padding: 2% 3%;
+}
+
+.nope2 {
+  grid-area: nope2;
+  background-color: #282b2f;
+}
+
+.nope3 {
+  grid-area: nope3;
+}
+
+.nope4 {
+  grid-area: nope4;
+}
+
+.page3_block1 {
+  grid-area: page3;
+}
+
+.page4 {
+  display: grid;
+  grid-template-areas:
+    "page4_1 page4_2";
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin: 0;
+}
+
+.page4_title {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.65vw;
+  text-transform: uppercase;
+  margin-bottom: 8%;
+  color: #f9f9f9;
+}
+
+.page4_text {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  font-size: 2.35vw;
+  color: #f9f9f9;
+}
+
+.page4_block1 .page4_text {
+    margin-bottom: 15%;
+}
+
+.page4_block2 .page4_text {
+  margin-bottom: 12%;
+}
+
+.page4 a {
+  text-decoration: none;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.25vw;
+  text-transform: uppercase;
+  color: #f9f9f9;
+  border: 2px solid #f9f9f9;
+  border-radius: 25px;
+  padding: 2% 3%;
+}
+
+.page4_block1 {
+  grid-area: page4_1;
+  background-color: #2ebd59;
+  padding-left: 26%;
+  padding-top: 13%;
+  padding-bottom: 10%;
+}
+
+.page4_block2 {
+  grid-area: page4_2;
+  background-color: #282b2f;
+  padding-left: 7.5%;
+  padding-top: 17%;
+  padding-bottom: 10%;
+}
+
+
+.page5 {
+  display: grid;
+  grid-template-areas:
+    "page5_block1 page5_block2 page5_block4"
+    "page5_block1 page5_block3 page5_block5";
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1.5fr 1fr 2fr;
+  grid-gap: 10%;
+  margin: 0;
+  background-color: #212227;
+  padding: 5% 12.5%;
+}
+
+.page5 a {
+  text-decoration: none;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.95vw;
+  text-transform: uppercase;
+  color: #919191;
+}
+
+.page5 i {
+    padding-right: 3%;
+}
+
+.page5_title {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.25vw;
+  text-transform: uppercase;
+  color: #f9f9f9;
+  margin-bottom: 7%;
+}
+
+.page5_text {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.95vw;
+  color: #919191;
+  margin-bottom: 7%;
+}
+
+.page5_rights {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.95vw;
+  color: #919191;
+  margin-left: 5%;
+  text-transform: uppercase;
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: row;
+}
+
+.sponsor {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 0.85vw;
+  color: #f2f7fb;
+  border: 1px solid #f2f7fb;
+  padding: 5% 4%;
+  margin-right: 5%;
+  text-transform: uppercase;
+}
+
+.email {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.95vw;
+  color: #919191;
+  width: 100%;
+  background-color: #4d4e52;
+  border: 0px solid #f2f7fb;
+  padding: 4%;
+}
+
+.page5_block1 {
+  grid-area: page5_block1
+}
+
+.page5_block2 {
+  grid-area: page5_block2
+}
+
+.page5_block3 {
+  grid-area: page5_block3;
+  display: flex;
+  flex-direction: column;
+}
+
+.page5_block4 {
+  grid-area: page5_block4
+}
+
+.page5_block5 {
+  grid-area: page5_block5
+}
+
+
+@media only screen and (max-device-width: 375px) {
+  .page2_block2 .page2_text {
+    font-size: 1vw;
+  }
+
+  .page2_block2 .page2_title {
+    font-size: 0.7vw;
+  }
+
+  .page2 a {
+    font-size: 0.6vw;
+  }
+
+  .page3_text {
+    font-size: 1.5vw;
+  }
+
+  .page3_title {
+    font-size: 1.35vw;
+  }
+
+  .page3 a {
+    font-size: 1.4vw;
+  }
+
+  .page4_title {
+    font-size: 0.9vw;
+  }
+
+  .page4_text {
+    font-size: 1vw;
+  }
+
+  .page4 a {
+    font-size: 0.8vw;
+  }
+
+  .page5_title {
+    font-size: 0.9vw;
+  }
+
+  .page5_text {
+    font-size: 0.5vw;
+  }
+  .page5_rights {
+    font-size: 0.5vw;
+  }
+}
